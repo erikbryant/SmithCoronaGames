@@ -1,0 +1,73 @@
+MAKEFILE      File to determine what targets are necessary to build bitmaps
+
+MAKE     BAT  BATCH file to build the PHRASE bitmaps
+
+FILE     LIS  This file
+/*
+** CRT bitmaps.
+*/
+ARROW    BMP  The arrow that points to the wheel
+BROKEU   BMP  BROKE top half
+BROKEL   BMP  BROKE bottom half
+FREEU    BMP  FREE top half
+FREEL    BMP  FREE bottom half
+LOSEU    BMP  LOSE top hal
+LOSEL    BMP  LOSE bottom half
+
+100U     BMP  100 top half
+100L     BMP  100 bottom half
+200U     BMP  200 top half
+200L     BMP  200 bottom half
+300U     BMP  300 top half
+300L     BMP  300 bottom half
+400U     BMP  400 top half
+400L     BMP  400 bottom half
+500U     BMP  500 top half
+500L     BMP  500 bottom half
+600U     BMP  600 top half
+600L     BMP  600 bottom half
+700U     BMP  700 top half
+700L     BMP  700 bottom half
+800U     BMP  800 top half
+800L     BMP  800 bottom half
+900U     BMP  900 top half
+900L     BMP  900 bottom half
+1000U    BMP  1000 top half
+1000L    BMP  1000 bottom half
+1500U    BMP  1500 top half
+1500L    BMP  1500 bottom half
+
+/*
+** LCD bitmaps.
+*/
+DARROW   BMP  The arrow that points to the wheel
+DBROKEU  BMP  BROKE top half
+DBROKEL  BMP  BROKE bottom half
+DFREEU   BMP  FREE top half
+DFREEL   BMP  FREE bottom half
+DLOSEU   BMP  LOSE top half
+DLOSEL   BMP  LOSE bottom half
+
+D100U    BMP  100 top half
+D100L    BMP  100 bottom half
+D200U    BMP  200 top half
+D200L    BMP  200 bottom half
+D300U    BMP  300 top half
+D300L    BMP  300 bottom half
+D400U    BMP  400 top half
+D400L    BMP  400 bottom half
+D500U    BMP  500 top half
+D500L    BMP  500 bottom half
+D600U    BMP  600 top half
+D600L    BMP  600 bottom half
+D700U    BMP  700 top half
+D700L    BMP  700 bottom half
+D800U    BMP  800 top half
+D800L    BMP  800 bottom half
+D900U    BMP  900 top half
+D900L    BMP  900 bottom half
+D1000U   BMP  1000 top half
+D1000L   BMP  1000 bottom half
+D1500U   BMP  1500 top half
+D1500L   BMP  1500 bottom half
+

@@ -1,0 +1,150 @@
+/*
+** This is a help file for the application:
+**    Mines Alive!
+*/
+
+#ifdef PC
+   #define ADJ 0
+#endif
+
+#ifdef CRT
+   #define ADJ 2
+#endif
+
+#ifdef LCD
+   #define ADJ 0
+#endif
+
+/*
+** Records...
+*/
+HELP_RECORD Help_records[] = {
+   { 1 - ADJ,  5, 25,  1, -2,  2,  4, "Objective:"},
+   { 0 - ADJ,  5,  1,  1,  1,  1,  3, "Uncover all the squares\\t without triggering a mine. Mines Alive!\\t is timed, so work as\\t fast as"},
+   { 0 - ADJ,  6,  1,  1,  1,  1,  3, "you\\t can! \\uExpose\\u squares one\\t at a time by pressing the\\t X Key.\\t If the square is\\t not\\t a"},
+   { 0 - ADJ,  8,  1,  1,  1,  1,  3, "mine,\\t one or several\\t surrounding squares\\t are\\t exposed\\t\\t\\t revealing\\t safe territory. Some"},
+   { 0 - ADJ,  5,  1,  1,  1,  1,  3, "squares are blank and others display the number of bombs in the surrounding eight squares."},
+   { 0 - ADJ,  5, 25,  1,  1,  1,  3, "Use luck and strategy to determine which squares are safe and which squares are bombs."},
+   { 0 - ADJ,  5,  1,  1,  1,  1,  3, "Win the game by successfully \\umarking\\u all  the mines (press the M Key when the cursor  is"},
+   { 0 - ADJ,  5, 25,  1,  1,  1,  3, "over the suspected bomb). Lose by exposing a bomb with the X Key."},
+   { 1 - ADJ,  5, 25,  1, -2,  2,  4, "Playing Field:"},
+   { 0 - ADJ,  5,  1,  1,  1,  1,  3, "The playing field is an active mine field\\t represented by a grid of\\t\\t squares. (You\\t choose the"},
+   { 0 - ADJ,  5,  1,  1,  1,  1,  3, "shape!) Each square represents a potential bomb. When a square is exposed, which has no"},
+   { 0 - ADJ,  6,  1,  1,  1,  1,  3, "mines adjacent to it, a safe area is revealed represented by blank squares. Whenever\\t a"},
+   { 0 - ADJ,  5,  1,  1,  1,  1,  3, "safe square borders a covered square, it\\t will\\t contain\\t a number representing\\t the  number of"},
+   { 0 - ADJ,  5,  1,  1,  1,  1,  3, "bombs in the surrounding eight squares.  A  square marked as a bomb will contain a bomb"},
+   { 0 - ADJ,  5, 25,  1,  1,  1,  3, "icon. Each game begins with all squares covered."},
+   { 0 - ADJ,  5,  1,  1,  1,  1,  3, "A\\t  blinking X marks your current position on the board. Use\\t the cursor keys to move the X"},
+   { 0 - ADJ,  5, 25,  1, -3,  1,  3, "around the board."},
+   { 0 - ADJ,  5, 25,  1, -3,  1,  3, " "},
+   { 0 - ADJ,  5,  1,  1,  1,  1,  3, "A command box allows\\t you to start, pause, change\\t options, get help\\t or return\\t to the Word"},
+   { 0 - ADJ,  5,  1,  1,  1,  1,  3, "Processor. A status box indicates the current \\t skill level and contains\\t  a timer to track how"},
+   { 0 - ADJ,  5, 25,  1,  1,  1,  3, "long it takes to uncover all the squares."},
+   { 1 - ADJ,  5, 25,  1, -2,  2,  4, "Starting:"},
+   { 0 - ADJ,  6,  1,  1,  1,  1,  3, "Select any of  the available options if you wish\\t to change the preset\\t settings. They are"},
+   { 0 - ADJ,  5,  1,  1,  1,  1,  3, "preset to: Beginner\\t with a Rectangle background. Select\\t \\uN\\uew to begin the game by pressing"},
+   { 0 - ADJ,  5,  1,  1,  1,  1,  3, "the Select + N Keys. You can cancel the current game and start again by selecting the \\uN\\uew"},
+   { 0 - ADJ,  5, 25,  1,  1,  1,  3, "option anytime."},
+   { 1 - ADJ,  5, 25,  1, -2,  2,  4, "Playing:"},
+   { 0 - ADJ,  7,  1,  1,  1,  1,  3, "Use the  cursor keys to move the blinking X around the playing field. You are playing"},
+   { 0 - ADJ,  5, 25,  1, -3,  1,  3, "against the clock. The timer begins when you make your first move."},
+   { 0 - ADJ,  5, 25,  1, -3,  1,  3, " "},
+   { 0 - ADJ,  7,  1,  1,  1,  1,  3, "Make a move by positioning\\t the X over a  square and pressing one of the following"},
+   { 0 - ADJ,  5, 25,  1,  1,  1,  3, "characters."},
+   { 0 - ADJ,  6,  1,  1,  1,  1,  3, "X - Expose\\t a square. One\\t of three results occur: A number\\t  is displayed in\\t the square"},
+   { 0 - ADJ,  6,  1,  1,  1,  1,  3, "representing the number\\t of bombs in the surrounding eight squares. Safe area is exposed"},
+   { 0 - ADJ,  7,  1,  1,  1,  1,  3, "represented by blank squares. Any\\t square bordering an uncovered\\t area will contain\\t  a"},
+   { 0 - ADJ,  5,  1,  1,  1,  1,  3, "number. A bomb is exploded  and the game is over! If a square is\\t marked with a\\t mine\\t or"},
+   { 0 - ADJ,  5, 25,  1,  1,  1,  3, "a question mark marker you can not expose it until you un-mark it."},
+   { 0 - ADJ,  7,  1,  1,  1,  1,  3, "M\\t\\t\\t - Mark/unmark a bomb. A bomb icon is\\t displayed in\\t the square. A square\\t can be"},
+   { 0 - ADJ,  5, 25,  1, -4,  1,  3, "marked incorrectly. This will make it difficult to successfully complete the game."},
+   { 0 - ADJ,  5, 25,  1, -4,  1,  3, " "},
+   { 0 - ADJ,  6,  1,  1,  1,  1,  3, "? - Mark/unmark\\t a potential bomb. A question mark is\\t displayed in  the\\t square. Use the"},
+   { 0 - ADJ,  5,  1,  1,  1,  1,  3, "question mark if you suspect the square is a bomb,\\t but are not confident enough to mark it"},
+   { 0 - ADJ,  5,  1,  1,  1,  1,  3, "as one. After you have exposed and marked enough surrounding squares  to  determine its"},
+   { 0 - ADJ,  6,  1,  1,  1,  1,  3, "nature, go back to the\\t square and press the question\\t mark again to\\t remove\\t\\t it from\\t the"},
+   { 0 - ADJ,  5, 25,  1,  1,  1,  3, "board. You can now mark it as a known mine or expose it."},
+   { 0 - ADJ,  5,  1,  1,  1,  1,  3, "Pause the timer  by pressing the Select + P Keys. Help can be selected anytime during the"},
+   { 0 - ADJ,  5,  1,  1,  1,  1,  3, "game (Select + H). Press  the Exit Key when you have finished reading the help screens to"},
+   { 0 - ADJ,  5, 25,  1, -3,  1,  3, "return to the game."},
+   { 0 - ADJ,  5, 25,  1, -3,  1,  3, " "},
+   { 1 - ADJ,  5, 25,  1, -2,  2,  4, "Scoring:"},
+   { 0 - ADJ,  5,  1,  1,  1,  1,  3, "Your\\t score is determined by the \\t amount of time it takes\\t to successfully complete a game."},
+   { 0 - ADJ,  5, 25,  1,  1,  1,  3, "The lower your score, the better!"},
+   { 1 - ADJ,  5, 25,  1, -2,  2,  4, "Ending:"},
+   { 0 - ADJ,  7,  1,  1,  1,  1,  3, "Mines\\t Alive!\\t is\\t\\t won when\\t all of the\\t squares that do not\\t have mines under them are"},
+   { 0 - ADJ,  7,  1,  1,  1,  1,  3, "exposed. The game is terminated  when you expose a bomb instead of marking it. A"},
+   { 0 - ADJ,  6,  1,  1,  1,  1,  3, "message is displayed  to inform you when you win or lose. Press any\\t key to clear the"},
+   { 0 - ADJ,  5,  1,  1,  1,  1,  3, "message.  Press the Select + N\\t Keys to clear\\t the board\\t and\\t start\\t a \\uN\\uew game, or press"},
+   { 0 - ADJ,  5, 25,  1,  1,  1,  3, "the Select + Q Keys to return to the Word Processor."},
+   { 0 - ADJ,  8,  1,  1,  1,  1,  3, "Once you have mastered the game, add\\t challenge by changing the available options!"},
+   { 0 - ADJ,  6,  1,  1,  1,  1,  3, "Change the options\\t before you start a game. Press the\\t\\t Select + O Keys to display the"},
+   { 0 - ADJ,  5, 25,  1, -3,  1,  3, "Options."},
+   { 0 - ADJ,  5, 25,  1, -3,  1,  3, " "},
+   { 0 - ADJ,  5, 25,  1, -3,  1,  3, "Beginner: The easiest skill level. Mines Alive! is preset to play at the Beginner level."},
+   { 0 - ADJ,  5, 25,  1, -3,  1,  3, " "},
+   { 0 - ADJ,  5, 25,  1, -3,  1,  3, "Novice: Not so easy! For the experienced player."},
+   { 0 - ADJ,  5, 25,  1, -3,  1,  3, " "},
+   { 0 - ADJ,  5, 25,  1,  1,  1,  3, "Expert: The most difficult skill level. Ace players only!"},
+   { 0 - ADJ,  5, 25,  1, -3,  1,  3, "The higher the level, the greater the number of bombs hidden in each picture."},
+   { 0 - ADJ,  5, 25,  1, -3,  1,  3, " "},
+   { 0 - ADJ,  7,  1,  1,  1,  1,  3, "Picture: Determine the\\t shape of the playing field by choosing one of the following . . ."},
+   { 0 - ADJ,  5, 25,  1, -3,  1,  3, "Rectangle, Waffle, Truck, Ship, Arrow, Castle or Train."},
+   { 0 - ADJ,  5, 25,  1, -3,  1,  3, " "},
+   { 0 - ADJ,  5, 25,  1,  1,  1,  3, "Once you have made your selections, press the EXIT key to return to the game."},
+   { 0 - ADJ,  5, 25,  1, -3,  1,  3, "Play Mines Alive! at the Beginner level until you feel confident with the rules of the game."},
+   { 0 - ADJ,  5, 25,  1, -3,  1,  3, " "},
+   { 0 - ADJ,  5,  1,  1,  1,  1,  3, "Do\\t not mark a bomb if a number in an\\t adjacent square already\\t matches\\t the\\t actual number"},
+   { 0 - ADJ,  5, 25,  1, -3,  1,  3, "of bombs now surrounding the adjacent square."},
+   { 0 - ADJ,  5, 25,  1, -3,  1,  3, " "},
+   { 0 - ADJ,  5, 25,  1,  1,  1,  3, "Try not to guess! Use the number clues to determine where the bombs are hidden."}
+}; /* End Help_records */
+
+/*
+** Pages...
+*/
+HELP_PAGE Help_pages[] = {
+   {  0,   6},  /* Page #0 */
+   {  6,   2},  /* Page #1 */
+   {  8,   7},  /* Page #2 */
+   { 15,   6},  /* Page #3 */
+   { 21,   5},  /* Page #4 */
+   { 26,   6},  /* Page #5 */
+   { 32,   5},  /* Page #6 */
+   { 37,   8},  /* Page #7 */
+   { 45,   7},  /* Page #8 */
+   { 52,   6},  /* Page #9 */
+   { 58,   9},  /* Page #10 */
+   { 67,   6},  /* Page #11 */
+   { 73,   6}   /* Page #12 */
+}; /* End Help_pages */
+
+/*
+** Topics...
+*/
+HELP_TOPIC Help_topics[] = {
+   {"O\\uv\\uerview", 'V',  0,  4},
+   {"\\uR\\uules", 'R',  4,  6},
+   {"\\uO\\uptions", 'O', 10,  2},
+   {"\\uS\\utrategies", 'S', 12,  1}
+}; /* End Help_topics */
+
+/*
+** Header...
+*/
+HELP_INFO Game_help = {
+   "Mines Alive!",  /* App name */
+#ifdef LCD
+   "Helvetica 12",  /* LCD Font name */
+#else
+   "Helvetica 12",  /* CRT Font name */
+#endif
+     4, /* Number of topics */
+    13, /* Number of pages  */
+    79, /* Number of lines  */
+   Help_topics,
+   Help_pages,
+   Help_records
+}; /* End Game_help */
+
+#define GAME_HELP &Game_help

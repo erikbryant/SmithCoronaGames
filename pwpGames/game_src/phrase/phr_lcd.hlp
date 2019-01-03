@@ -1,0 +1,158 @@
+/*
+** This is a help file, created by:
+**    ..\..\bin\helpgen.exe
+** With the input file:
+**    phr_lcd.gen
+** For the application:
+**    Spin-A-Phrase
+*/
+
+#ifdef PC
+   #define ADJ 0
+#endif
+
+#ifdef CRT
+   #define ADJ 2
+#endif
+
+#ifdef LCD
+   #define ADJ 0
+#endif
+
+/*
+** Records...
+*/
+HELP_RECORD Help_records[] = {
+   { 1 - ADJ,  5, 25,  1, -2,  2,  4, "Objective:"},
+   { 0 - ADJ,  5,  1,  1,  1,  1,  3, "Solve the\\t hidden phrase! Spin the money\\t wheel and accumulate money as you\\t play.\\t Guess"},
+   { 0 - ADJ,  5,  1,  1,  1,  1,  3, "the phrase\\t correctly and you win the\\t game and the money. Play five\\t games to\\t complete a"},
+   { 0 - ADJ,  5, 25,  1,  1,  1,  3, "match!"},
+   { 1 - ADJ,  5, 25,  1, -2,  2,  4, "Playing Field:"},
+   { 0 - ADJ,  5, 25,  1, -3,  1,  3, "The Spin-A-Phrase playing field consists of the following:"},
+   { 0 - ADJ,  5, 25,  1, -3,  1,  3, " "},
+   { 0 - ADJ,  5, 25,  1, -3,  1,  3, "The money wheel."},
+   { 0 - ADJ,  5, 25,  1, -3,  1,  3, " "},
+   { 0 - ADJ,  7,  1,  1,  1,  1,  3, "Letters that\\t are used to solve\\t\\t the puzzle.\\t When a player chooses a letter, that\\t letter"},
+   { 0 - ADJ,  5, 25,  1,  1,  1,  3, "becomes inactive for the remainder of the game (it is blacked out)."},
+   { 0 - ADJ,  5, 25,  1, -3,  1,  3, "An optional clock (timer)."},
+   { 0 - ADJ,  5, 25,  1, -3,  1,  3, " "},
+   { 0 - ADJ,  5, 25,  1, -3,  1,  3, "A score box."},
+   { 0 - ADJ,  5, 25,  1, -3,  1,  3, " "},
+   { 0 - ADJ,  5,  1,  1,  1,  1,  3, "A command box which\\t allows you to start, change\\t options, get help  or return to\\t the\\t Word"},
+   { 0 - ADJ,  5, 25,  1,  1,  1,  3, "Processor."},
+   { 1 - ADJ,  5, 25,  1, -2,  2,  4, "Starting:"},
+   { 0 - ADJ,  6,  1,  1,  1,  2,  4, "Enter each player's name and determine if\\t the PWP will be playing for\\t any player (follow"},
+   { 0 - ADJ,  5, 25,  1, -3,  1,  3, "the easy screen prompts!). Up to three players can play at once."},
+   { 0 - ADJ,  5, 25,  1, -3,  1,  3, " "},
+   { 0 - ADJ,  5,  1,  1,  0,  1,  3, "Player One will be prompted to spin\\t first. Select any of the available options if you wish to"},
+   { 0 - ADJ,  6,  1,  1,  0,  1,  3, "change the preset settings. They are preset to: Clock On,  Turn Time 10, Solve Time 30,"},
+   { 0 - ADJ,  7,  1,  1,  0,  1,  3, "Level Beginner. You can cancel the current\\t game and start again\\t by selecting\\t the\\t New"},
+   { 0 - ADJ,  5, 25,  1,  1,  1,  3, "option."},
+   { 1 - ADJ,  5, 25,  1, -2,  2,  4, "Playing:"},
+   { 0 - ADJ,  5,  1,  1,  1,  1,  3, "\\uSpin the money wheel\\u by pressing Select + S. If the wheel stops on   a money value, you"},
+   { 0 - ADJ,  5,  1,  1,  1,  1,  3, "will\\t be prompted to enter a\\t consonant. If the\\t timer is on,\\t guess a letter within the time limit"},
+   { 0 - ADJ,  5,  1,  1,  1,  1,  3, "or you will\\t lose your turn. If the letter is  in the  puzzle it\\t will be turned over in the\\t hidden"},
+   { 0 - ADJ,  6,  1,  1,  1,  1,  3, "phrase.\\t\\t If\\t the letter chosen is not in\\t the hidden phrase, you\\t lose your turn and the next"},
+   { 0 - ADJ,  5,  1,  1,  1,  1,  3, "player is prompted\\t to\\t spin. If the money wheel stops at LOSE you do not get a chance to"},
+   { 0 - ADJ,  5, 25,  1,  1,  1,  3, "guess a letter and the next player spins."},
+   { 0 - ADJ,  5,  1,  1,  1,  1,  3, "If the money wheel  stops at BROKE, any  money accumulated during the game will be lost"},
+   { 0 - ADJ,  5, 25,  1, -2,  1,  3, "and the next player spins."},
+   { 0 - ADJ,  5, 25,  1, -2,  1,  3, " "},
+   { 0 - ADJ,  5,  1,  1,  1,  1,  3, "Instead of spinning the \\t wheel, a player\\t can\\t opt to press Select +\\t G to try  to guess the"},
+   { 0 - ADJ,  5, 25,  1,  1,  1,  3, "puzzle or press Select + V to buy a vowel."},
+   { 0 - ADJ,  5,  1,  1,  1,  1,  3, "\\uTo guess the puzzle\\u, follow the screen  prompt and type the missing letters. If you\\t make a"},
+   { 0 - ADJ,  5,  1,  1,  1,  1,  3, "mistake use the backspace key to correct it.  If the timer is  on you have a limited amount"},
+   { 0 - ADJ,  5,  1,  1,  1,  1,  3, "of time, so think  fast! When you have entered your guess press RETURN. If you guess the"},
+   { 0 - ADJ,  5, 25,  1,  1,  1,  3, "correct phrase, you win the game! Otherwise, the turn goes to the next player."},
+   { 0 - ADJ,  5, 25,  1, -3,  1,  3, "\\uTo buy a vowel\\u, follow the screen prompt by typing in the vowel."},
+   { 0 - ADJ,  5, 25,  1, -3,  1,  3, " "},
+   { 0 - ADJ,  5,  1,  1,  1,  1,  3, "If the vowel is in\\t the puzzle it will be turned over in the\\t hidden\\t phrase. If the\\t letter\\t chosen"},
+   { 0 - ADJ,  5, 25,  1, -3,  1,  3, "is not a part of the phrase, you lose your turn and the next player is prompted to spin."},
+   { 0 - ADJ,  5, 25,  1, -3,  1,  3, " "},
+   { 0 - ADJ,  5,  1,  1,  1,  1,  3, "The\\t Help feature (Select + H) \\t is accessible whenever it is your turn to spin. The game will"},
+   { 0 - ADJ,  6,  1,  1,  1,  1,  3, "pause temporarily\\t and\\t resume once\\t you exit Help. Press the Exit\\t Key to leave\\t the Help"},
+   { 0 - ADJ,  5, 25,  1,  1,  1,  3, "screens."},
+   { 1 - ADJ,  5, 25,  1, -2,  2,  4, "Scoring:"},
+   { 0 - ADJ,  5,  1,  1,  1,  1,  3, "Each time you correctly guess a letter, your Game balance is credited the amount shown on"},
+   { 0 - ADJ,  5,  1,  1,  1,  1,  3, "the\\t money wheel times the number\\t of occurrences the letter appears in\\t the puzzle. A vowel"},
+   { 0 - ADJ,  7,  1,  1,  1,  1,  3, "costs $100. This amount is subtracted from the Game\\t\\t balance when\\t a player presses"},
+   { 0 - ADJ,  5,  1,  1,  1,  1,  3, "Select + V; an additional $100 is NOT subtracted for\\t every occurrence of\\t that\\t\\t vowel\\t in the"},
+   { 0 - ADJ,  6,  1,  1,  1,  1,  3, "phrase.\\t Each player accumulates a Game balance as the\\t game proceeds.\\t\\t Beware of\\t the"},
+   { 0 - ADJ,  5, 25,  1,  1,  1,  3, "BROKE category on the wheel; it will cause your Game balance to reset to $0."},
+   { 0 - ADJ,  5, 25,  1, -3,  1,  3, "When a phrase is solved, the winner's Game balance is added to the Match balance."},
+   { 0 - ADJ,  5, 25,  1, -3,  1,  3, " "},
+   { 1 - ADJ,  5, 25,  1, -2,  2,  4, "Ending:"},
+   { 0 - ADJ,  7,  1,  1,  1,  1,  3, "The player\\t with\\t the highest Match balance after five games is\\t the overall\\t winner. Play"},
+   { 0 - ADJ,  5, 25,  1,  1,  1,  3, "another Match, or select Quit to return to the Word Processor."},
+   { 0 - ADJ,  8,  1,  1,  1,  1,  3, "Once\\t you have mastered the game, add \\uchallenge\\u by changing the available options!"},
+   { 0 - ADJ,  6,  1,  1,  1,  1,  3, "Change the options\\t before you start a game.\\t Press the Select +\\t O Keys to display the"},
+   { 0 - ADJ,  5, 25,  1, -3,  1,  3, "Options."},
+   { 0 - ADJ,  5, 25,  1, -3,  1,  3, " "},
+   { 0 - ADJ,  5,  1,  1,  1,  1,  3, "Clock - Turn the clock off if you do not want to have a \\t time limit for choosing  a letter or"},
+   { 0 - ADJ,  6,  1,  1,  1,  1,  3, "solving\\t the puzzle.  If Clock\\t\\t is off, the times specified\\t in Turn Time\\t and Solve\\t Time are"},
+   { 0 - ADJ,  5, 25,  1,  1,  1,  3, "ignored. The Clock is always on unless you change it using this option."},
+   { 0 - ADJ,  5,  1,  1,  0,  1,  3, "Turn\\t Time - You have\\t 10 seconds \\t to spin the wheel when\\t\\t it is your turn. Once the wheel"},
+   { 0 - ADJ,  5,  1,  1,  0,  1,  3, "stops you\\t have 10 more seconds to  offer a letter for the puzzle. If you wish to  increase"},
+   { 0 - ADJ,  5, 25,  1, -4,  1,  3, "or decrease this preset time, use this option and enter your own time limits."},
+   { 0 - ADJ,  5, 25,  1, -4,  1,  3, " "},
+   { 0 - ADJ,  5,  1,  1,  0,  1,  3, "Solve  Time - You have 30 seconds to guess the puzzle. Increase or decrease\\t this\\t limit to"},
+   { 0 - ADJ,  5, 25,  1, -4,  1,  3, "suit your own playing style."},
+   { 0 - ADJ,  5, 25,  1, -4,  1,  3, " "},
+   { 0 - ADJ,  6,  1,  1,  0,  1,  3, "Level - Beginner, Novice or Expert!\\t The higher the level,\\t\\t the larger the stakes are on the"},
+   { 0 - ADJ,  5, 25,  1,  1,  1,  3, "money wheel."},
+   { 0 - ADJ,  5, 25,  1, -3,  1,  3, "Turn the Clock option Off until you become comfortable playing the game."},
+   { 0 - ADJ,  5, 25,  1, -3,  1,  3, " "},
+   { 0 - ADJ,  5, 25,  1, -3,  1,  3, "Buy a vowel when you need some extra help to solve the puzzle."},
+   { 0 - ADJ,  5, 25,  1, -3,  1,  3, " "},
+   { 0 - ADJ,  7,  1,  1,  1,  1,  3, "Don't guess the puzzle if you are not sure. You will lose your turn to spin if you are"},
+   { 0 - ADJ,  5, 25,  1,  1,  1,  3, "incorrect."}
+}; /* End Help_records */
+
+/*
+** Pages...
+*/
+HELP_PAGE Help_pages[] = {
+   {  0,   4},  /* Page #0 */
+   {  4,   7},  /* Page #1 */
+   { 11,   6},  /* Page #2 */
+   { 17,   8},  /* Page #3 */
+   { 25,   7},  /* Page #4 */
+   { 32,   5},  /* Page #5 */
+   { 37,   4},  /* Page #6 */
+   { 41,   8},  /* Page #7 */
+   { 49,   7},  /* Page #8 */
+   { 56,   5},  /* Page #9 */
+   { 61,   7},  /* Page #10 */
+   { 68,   9},  /* Page #11 */
+   { 77,   6}   /* Page #12 */
+}; /* End Help_pages */
+
+/*
+** Topics...
+*/
+HELP_TOPIC Help_topics[] = {
+   {"O\\uv\\uerview", 'V',  0,  3},
+   {"\\uR\\uules", 'R',  3,  7},
+   {"\\uO\\uptions", 'O', 10,  2},
+   {"\\uS\\utrategies", 'S', 12,  1}
+}; /* End Help_topics */
+
+/*
+** Header...
+*/
+HELP_INFO Game_help = {
+   "Spin-A-Phrase",  /* App name */
+#ifdef LCD
+   "Helvetica 12",  /* LCD Font name */
+#else
+   "Helvetica 12",  /* CRT Font name */
+#endif
+     4, /* Number of topics */
+    13, /* Number of pages  */
+    83, /* Number of lines  */
+   Help_topics,
+   Help_pages,
+   Help_records
+}; /* End Game_help */
+
+#define GAME_HELP &Game_help

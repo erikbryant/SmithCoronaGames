@@ -1,0 +1,155 @@
+****************************************************************************
+*
+*       $Workfile:   varstab.jmp  $     - global address table for use by downloadable programs
+*
+*	$Revision:   1.18  $		$Modtime:   01 Nov 1991 11:10:58  $
+*
+*	$Author:   SteveP  $
+*
+*
+*
+*	(C) Copyright 1990,1991 Smith Corona Corp.
+*	All Rights Reserved.
+*
+*
+*
+* $Log:   S:/h/varstab.jmv  $
+*  
+*     Rev 1.18   01 Nov 1991 11:13:20   SteveP
+*  Added mouse.
+*  
+*     Rev 1.17   01 Nov 1991 11:03:50   SteveP
+*  Added disk file type entry.
+*  
+*     Rev 1.16   28 Oct 1991 20:22:42   SteveP
+*  Added comm_keys_setup.
+*  
+*     Rev 1.15   27 Oct 1991 19:29:58   SteveP
+*  Added rawDisplaySurface.
+*  
+*     Rev 1.14   26 Oct 1991 22:32:16   SteveP
+*  Removed duplicate edwlines.
+*  
+*     Rev 1.13   26 Oct 1991 22:16:32   SteveP
+*  Added vars for faxbit.c
+*  
+*     Rev 1.12   26 Oct 1991 19:04:20   SteveP
+*  Added FAX and PIPE data.
+*  
+*     Rev 1.11   25 Oct 1991 14:36:12   SteveP
+*  Added hextents.
+*  
+*     Rev 1.10   30 Sep 1991 20:08:26   SteveP
+*  Added am_dialog_table.
+*  
+*     Rev 1.9   28 Sep 1991 16:47:16   SteveP
+*  Added vars for exec.
+*  
+*     Rev 1.8   27 Sep 1991 15:59:32   SteveP
+*  Added dialog_table.
+*  
+*     Rev 1.7   23 Sep 1991 23:21:52   SteveP
+*  Added down_bot_stack.
+*  
+*     Rev 1.6   23 Sep 1991 20:43:24   SteveP
+*  Added down_???_stack vars.
+*  
+*     Rev 1.5   16 Sep 1991 16:29:06   SteveP
+*  Removed some print and commKeys vars.
+*  
+*     Rev 1.4   10 Sep 1991 22:05:02   SteveP
+*  Removed psossize.
+*  
+*     Rev 1.3   02 Sep 1991 09:29:34   SteveP
+*  Removed disk 400k vars.
+*  
+*     Rev 1.2   21 Aug 1991 23:11:12   SteveP
+*  Removed double reference to psossize.
+*  
+*     Rev 1.1   21 Aug 1991 14:01:52   SteveP
+*  Added comm_keys vars.
+*  
+*     Rev 1.0   15 Aug 1991 10:26:40   SteveP
+*  Initial revision.
+*  
+*
+****************************************************************************
+***********************************************************************
+* File names to be entered in the jumptable. These are processed
+* by jumptab.exe to create files varstab.j and varstab.src
+* A special version of winmacro.h is used to generate calls through
+* the jumptable. 
+***********************************************************************
+cursorwidths
+dirName
+down_bot_stack
+drv_720K
+dialog_table
+fmt_720K
+keybd_driver
+keydef
+pdoc_head
+down_old_stack
+rootwindow
+tasks
+extend_msg_table
+extend_msg_startup
+psctr0st
+psctr0ln
+down_new_stack
+sys_strap
+sys_settings
+editwin
+edwlines
+mr_head
+mr_sm_id
+printer_data
+downloadptr
+handle
+pinfo
+active_task
+at_stop_code
+clip_held
+filename
+pfm
+dsplen
+dspwdt
+ticks
+scrnmem
+file_refresh
+flashon
+halfwaytotype
+halfwaytowp
+help_displayed
+lid_task
+nofilerefresh
+nummsgs
+nummsgsbufs
+old_task
+pixels_per_inch
+queued_typeswitches
+savefile
+savefilename
+stat
+statmsgsusp
+task_number
+typeexit
+typefail
+typefile
+typefilename
+typelock
+type_requested
+type_task
+am_dialog_table
+hextents
+fax_modem_data
+pipe_data
+cmap
+ul_height
+ul_offset_below
+super_offset_above
+subsc_offset_below
+rawDisplaySurface
+comm_keys_setup
+file_type_list
+mouse

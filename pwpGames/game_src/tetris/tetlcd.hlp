@@ -1,0 +1,158 @@
+/*
+** This is a help file, created by:
+**    ..\..\bin\helpgen.exe
+** With the input file:
+**    tetlcd.gen
+** For the application:
+**    Tetris
+*/
+
+#ifdef PC
+   #define ADJ 0
+#endif
+
+#ifdef CRT
+   #define ADJ 2
+#endif
+
+#ifdef LCD
+   #define ADJ 0
+#endif
+
+/*
+** Records...
+*/
+HELP_RECORD Help_records[] = {
+   { 1 - ADJ,  5, 25,  1,  2,  2,  4, "Objective:"},
+   { 0 - ADJ,  6,  1,  1,  1,  1,  3, "Tetris pieces fall from\\t the top of the playing field. Pieces consist  of blocks\\t arranged in"},
+   { 0 - ADJ,  5,  1,  1,  1,  1,  3, "several different shapes and patterns. As they fall, you need to manipulate the\\t  pieces  to"},
+   { 0 - ADJ,  5,  1,  1,  1,  1,  3, "fill in a\\t row \\t of\\t blocks. Once a row is complete, it vanishes.  The game is over when the"},
+   { 0 - ADJ,  5, 25,  1,  1,  1,  3, "pieces stack up to the top of the playing field."},
+   { 1 - ADJ,  5, 25,  1,  2,  2,  4, "Playing Field:"},
+   { 0 - ADJ,  5,  1,  1,  1,  1,  3, "The playing field is the area\\t where the  Tetris pieces fall. \\t As the pieces fall they can be"},
+   { 0 - ADJ,  5,  1,  1,  1,  1,  3, "moved right or left  as far as the\\t field extends, accelerated to  the bottom, or immediately"},
+   { 0 - ADJ,  5, 25,  1, -2,  1,  3, "dropped to the bottom. Pieces that are stacked on the bottom shorten the playing field."},
+   { 0 - ADJ,  5, 25,  1, -2,  1,  3, " "},
+   { 0 - ADJ,  5,  1,  1,  1,  1,  3, "A status box displays the current score, skill level, and the number\\t of lines that have been"},
+   { 0 - ADJ,  5, 25,  1,  1,  1,  3, "removed. A command box allows you to start, pause, quit, change options and get help."},
+   { 1 - ADJ,  5, 25,  1,  2,  2,  4, "Starting:"},
+   { 0 - ADJ,  6,  1,  1,  1,  1,  3, "Select any of the available options if\\t you wish to change the initial settings. \\uO\\uptions are"},
+   { 0 - ADJ,  5,  1,  1,  1,  1,  3, "preset to: \\uL\\uevel 1, \\uS\\utart Rows 0 and\\t \\uP\\ureview On (see \\uO\\uptions from\\t the Main Menu.) Select"},
+   { 0 - ADJ,  5,  1,  1,  1,  1,  3, "\\uN\\uew to begin the game by pressing the Select +\\t N Keys. You can cancel the current game"},
+   { 0 - ADJ,  5, 25,  1,  1,  1,  3, "and start again by selecting the \\uN\\uew option."},
+   { 1 - ADJ,  5, 25,  1,  2,  2,  4, "Playing:"},
+   { 0 - ADJ,  5,  1,  1,  1,  1,  3, "The longer you play the more points you can score!\\t (Remember, the object is to form solid"},
+   { 0 - ADJ,  5,  1,  1,  1,  1,  3, "rows of blocks across the  bottom of the playing field. When a row is complete, its blocks"},
+   { 0 - ADJ,  5,  1,  1,  1,  1,  3, "will vanish). The pieces will fall one at a time from the top center of the playing  field. Use"},
+   { 0 - ADJ,  5, 25,  1,  1,  1,  3, "the following keys to control the falling piece:"},
+   { 0 - ADJ,  5, 25,  1,  1,  1,  3, "Right Arrow Key: \\t\\tMoves the piece to the right."},
+   { 0 - ADJ,  5, 25,  1,  1,  1,  3, "Left Arrow Key: \\t\\tMoves the piece to the left."},
+   { 0 - ADJ,  5, 25,  1,  1,  1,  3, "Up Arrow Key: \\t\\tRotates the piece."},
+   { 0 - ADJ,  5, 25,  1,  1,  1,  3, "Down Arrow Key:\\t\\tAccelerates the falling piece."},
+   { 0 - ADJ,  5, 25,  1,  1,  1,  3, "Spacebar:\\t\\t\\t\\tDrops piece immediately to the botttom."},
+   { 0 - ADJ,  5,  1,  1,  1,  1,  3, "You can  only manipulate a piece as it falls. It will continue to fall until it  lands\\t on another"},
+   { 0 - ADJ,  5, 25,  1,  1,  1,  3, "piece or on the bottom of the playing field."},
+   { 0 - ADJ,  7,  1,  1,  1,  1,  3, "Once\\t\\t a piece lands you are  able for a split second\\t\\t to slide it right or left (space"},
+   { 0 - ADJ,  5, 25,  1,  1,  1,  3, "permitting.) This must be done quickly before the next piece falls."},
+   { 0 - ADJ,  5, 25,  1,  1,  1,  3, " "},
+   { 0 - ADJ,  6,  1,  1,  1,  1,  3, "The \\uP\\uause feature (Select + P) will temporarily halt the game. Press Select +\\t P again to"},
+   { 0 - ADJ,  5,  1,  1,  1,  1,  3, "continue playing. The \\uH\\uelp feature (Select + H) will  also pause the game. Press Select + P"},
+   { 0 - ADJ,  5, 25,  1,  1,  1,  3, "to resume once you exit \\uH\\uelp. (Press the Exit Key to leave the \\uH\\uelp screens)."},
+   { 1 - ADJ,  5, 25,  1,  2,  2,  4, "Scoring:"},
+   { 0 - ADJ,  5,  1,  1,  1,  1,  3, "Each piece begins\\t with a\\t point value. This value increases as\\t you increase your \\uL\\uevel. As"},
+   { 0 - ADJ,  6,  1,  1,  1,  1,  3, "the piece falls,\\t the\\t point value steadily\\t decreases. When\\t you\\t rotate a piece or move it"},
+   { 0 - ADJ,  6,  1,  1,  1,  1,  3, "horizontally, the point value  also decreases. If you\\t drop a piece to the bottom its point"},
+   { 0 - ADJ,  6,  1,  1,  1,  1,  3, "value increases relative to the\\t distance it  fell. Each piece that\\t lands has\\t a point\\t value"},
+   { 0 - ADJ,  5, 25,  1,  1,  1,  3, "based on the number of times it was manipulated and the distance the piece fell."},
+   { 1 - ADJ,  5, 25,  1,  2,  2,  4, "Additional Scoring Rules:"},
+   { 0 - ADJ,  5, 25,  1,  1,  1,  3, "One hundred points are added to your score when a row is removed."},
+   { 0 - ADJ,  5, 25,  1, -4,  1,  3, " "},
+   { 0 - ADJ,  6,  1,  1,  1,  1,  3, "If rows are removed simultaneously the point value increases 200 for 2 rows, 400 for\\t 3"},
+   { 0 - ADJ,  5, 25,  1,  1,  1,  3, "rows, and 800 for 4 rows."},
+   { 0 - ADJ,  5, 25,  1, -4,  1,  3, " "},
+   { 0 - ADJ,  5, 25,  1,  1,  1,  3, "A player's score is diminished by half if the \\uP\\ureview feature is on."},
+   { 1 - ADJ,  5, 25,  1,  2,  2,  4, "Ending:"},
+   { 0 - ADJ,  5,  1,  1,  1,  1,  3, "The game is over when the pieces are stacked to the\\t top of the playing field. If you want"},
+   { 0 - ADJ,  5,  1,  1,  1,  1,  3, "to return to\\t the  word processor, press the Select + Q Keys. Select \\uN\\uew to\\t begin  a new"},
+   { 0 - ADJ,  5, 25,  1,  1,  1,  3, "game!"},
+   { 0 - ADJ,  6,  1,  1,  1,  1,  3, "Once you\\t are a Tetris\\t expert,\\t\\t make the game more challenging by \\t using\\t the available"},
+   { 0 - ADJ,  7,  1,  1,  1,  1,  3, "options! Change\\t the\\t options\\t before you start a game. Press the\\t Select + O Keys to"},
+   { 0 - ADJ,  5, 25,  1,  1,  1,  3, "display the \\uO\\uptions."},
+   { 1 - ADJ,  5, 25,  1,  2,  2,  4, "Level:"},
+   { 0 - ADJ,  5,  1,  1,  1,  1,  3, "Accelerate the rate the pieces  fall by increasing the \\uL\\uevel. Choose a level between 1 and"},
+   { 0 - ADJ,  6,  1,  1,  1,  1,  3, "10 by pressing the Select  + L Keys (hold the Select key down and  press the\\t L key"},
+   { 0 - ADJ,  5,  1,  1,  1,  1,  3, "several times to continue to\\t increase the \\uL\\uevel number.)\\t Whenever twelve lines are cleared,"},
+   { 0 - ADJ,  5, 25,  1,  1,  1,  3, "the level automatically increases by one."},
+   { 1 - ADJ,  5, 25,  1,  2,  2,  4, "Start Rows:"},
+   { 0 - ADJ,  7,  1,  1,  1,  1,  3, "Increase the difficulty\\t of the game by\\t starting with\\t randomly\\t\\t\\t scattered\\t pieces. Choose"},
+   { 0 - ADJ,  7,  1,  1,  1,  1,  3, "between 0 and 10 rows of scattered pieces. Press the Select + S Keys to set your"},
+   { 0 - ADJ,  5, 25,  1,  1,  1,  3, "value."},
+   { 1 - ADJ,  5, 25,  1,  2,  2,  4, "Preview:"},
+   { 0 - ADJ,  5,  1,  1,  1,  1,  3, "When the \\uP\\ureview option is On\\t the next piece\\t that\\t will fall will\\t be\\t displayed in the bottom"},
+   { 0 - ADJ,  6,  1,  1,  1,  1,  3, "of the status\\t box. Press the Select + P Keys to change the \\uP\\ureview option from\\t On to"},
+   { 0 - ADJ,  5, 25,  1,  1,  1,  3, "Off."},
+   { 0 - ADJ,  5, 25,  1,  1,  1,  3, " "},
+   { 0 - ADJ,  5, 25,  1,  1,  1,  3, "Once you have made your selections, press the Exit Key to return to the main screen."},
+   { 0 - ADJ,  5, 25,  1,  1,  1,  3, "Do not let the blocks stack up in piles, try to create a smooth surface."},
+   { 0 - ADJ,  5, 25,  1,  1,  1,  3, " "},
+   { 0 - ADJ,  5,  1,  1,  1,  1,  3, "Use minimum  keystrokes to position the piece. The more\\t\\t a piece\\t is manipulated\\t the lower"},
+   { 0 - ADJ,  5, 25,  1,  1,  1,  3, "its point value becomes."},
+   { 0 - ADJ,  5, 25,  1,  1,  1,  3, " "},
+   { 0 - ADJ,  5, 25,  1,  1,  1,  3, "Drop the piece as soon as it is in a satisfactory position."},
+   { 0 - ADJ,  5, 25,  1,  1,  1,  3, "Dropping a piece increases its point value."},
+   { 0 - ADJ,  5, 25,  1,  1,  1,  3, " "},
+   { 0 - ADJ,  5, 25,  1,  1,  1,  3, "If you are a beginner, leave \\uP\\ureview On to help plan your next move."},
+   { 0 - ADJ,  5, 25,  1,  1,  1,  3, " "},
+   { 0 - ADJ,  5, 25,  1,  1,  1,  3, "Turn \\uP\\ureview to Off once you gain experience to increase your score."}
+}; /* End Help_records */
+
+/*
+** Pages...
+*/
+HELP_PAGE Help_pages[] = {
+   {  0,   5},  /* Page #0 */
+   {  5,   7},  /* Page #1 */
+   { 12,   5},  /* Page #2 */
+   { 17,   5},  /* Page #3 */
+   { 22,   7},  /* Page #4 */
+   { 29,   6},  /* Page #5 */
+   { 35,   6},  /* Page #6 */
+   { 41,   7},  /* Page #7 */
+   { 48,   4},  /* Page #8 */
+   { 52,   3},  /* Page #9 */
+   { 55,   5},  /* Page #10 */
+   { 60,   4},  /* Page #11 */
+   { 64,   6},  /* Page #12 */
+   { 70,   6},  /* Page #13 */
+   { 76,   5}   /* Page #14 */
+}; /* End Help_pages */
+
+/*
+** Topics...
+*/
+HELP_TOPIC Help_topics[] = {
+   {"O\\uv\\uerview", 'V',  0,  2},
+   {"\\uR\\uules", 'R',  2,  7},
+   {"\\uO\\uptions", 'O',  9,  4},
+   {"\\uS\\utrategies", 'S', 13,  2}
+}; /* End Help_topics */
+
+/*
+** Header...
+*/
+HELP_INFO Game_help = {
+   "Tetris",  /* App name */
+#ifdef LCD
+   "Helvetica 12",  /* LCD Font name */
+#else
+   "Helvetica 12",  /* CRT Font name */
+#endif
+     4, /* Number of topics */
+    15, /* Number of pages  */
+    81, /* Number of lines  */
+   Help_topics,
+   Help_pages,
+   Help_records
+}; /* End Game_help */
+
+#define GAME_HELP &Game_help

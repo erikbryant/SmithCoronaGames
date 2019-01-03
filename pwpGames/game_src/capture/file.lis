@@ -1,0 +1,35 @@
+
+Files necessary to build CaptureIt
+___________________________________
+
+BLACKCRT BMP      CRT Black circle
+BLACKLCD BMP      LCD Black circle
+FREECRT  BMP      CRT Free square
+FREELCD  BMP      LCD Free square
+WHITECRT BMP      CRT White circle
+WHITELCD BMP      LCD White circle
+
+MAKE     BAT      Batch file to make game on different machines
+MAKEFILE PWP      PWP makefile
+FILE     LIS      This file
+MYAPP    LNK      Link file for the PWP makefile
+
+BOARD    C        Routines for manipulating the board
+BOARD    H        Definitions for the board routines
+CAPTURE  C        Main program
+CAPTURE  H        Definitions for the main program
+CURSOR   C        Routines for moving the cursor
+CURSOR   H        Definitions for the cursor routines
+HELP     C        Help routines
+HELP     H        Definitions for the help routines
+MAKEMOVE C        Routines for processing moves
+MAKEMOVE H        Definitions for move processing routines
+MENU     C        Menuing routines
+MENU     H        Definitions for the menuing routines
+MINIMAX  C        Game tree processing (it chooses the move to make)
+MINIMAX  H        Definitions for the game tree processing routines
+WIN_RTNS C        Windowing routines
+WIN_RTNS H        Definitions for the windowing routines
+CAPCRT   HLP      Help text for the CRT version
+CAPLCD   HLP      Help text for the LCD version
+

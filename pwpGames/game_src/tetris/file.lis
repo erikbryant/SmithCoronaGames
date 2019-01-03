@@ -1,0 +1,14 @@
+
+Files necessary to build Tetris.
+________________________________
+
+MAKEFILE        File to determine what targets are necessary to build Tetris
+MAKE     BAT    BAT file to initiate build of Tetris.
+
+TETRIS   C      Tetris source code.
+
+TETCRT   HLP    The include file for the CRT version of the Tetris help text.
+TETLCD   GEN    The include file for the LCD version of the Tetris help text.
+
+FILE     LIS    The file you are currently reading.
+

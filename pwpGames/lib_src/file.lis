@@ -1,0 +1,54 @@
+MAKEFILE      File to control the building of the libraries and pixmaps.
+
+MAKE     BAT  BATCH file to build the libraries and pixmaps.
+
+/*
+** CRT bitmaps.
+*/
+SCLGCRT  BMP  Smith Corona logo.
+ETILGCRT BMP  ETI logo.
+
+/*
+** LCD bitmaps.
+*/
+SCLGLCD  BMP  Smith Corona logo
+ETILGLCD BMP  ETI logo
+
+INP      C    Keyboard input routines
+FONTLIB  C    Font routines
+WINDOW   C    Pop up windows and the title bar
+SPLASH   C    The splash screen
+HELPLIB  C    Help functions
+GR       C    Graphics functions
+DOWNHEAD C    The download header
+PWP      C    Main function for PWP applications
+
+INP      H    Keyboard definitions
+FONTLIB  H    Font definitions
+FILEIO   H    File access definitions
+WINDOW   H    Pop up windows and the title bar definitions
+SPLASH   H    The splash screen definitions
+HELPLIB  H    Help function definitions
+GR       H    Graphics definitions
+SC_DEF   H    Type declerations
+
+DOWNSYS  CRT  Linker options file for the CRT
+DOWNSYS  LCD  Linker options file for the LCD
+DOWNZERO LNK  Linker options file for DOWNZERO.ABS
+DOWNONE  LNK  Linker options file for DOWNONE.ABS
+
+HELV_12  HDR  Header for Helvetica 12 font data
+HELV_16  HDR  Header for Helvetica 16 font data
+HELV_20  HDR  Header for Helvetica 20 font data
+HELV_24  HDR  Header for Helvetica 24 font data
+HELV_30  HDR  Header for Helvetica 30 font data
+HELV_37  HDR  Header for Helvetica 37 font data
+
+HELV_12  FNT  Data for Helvetica 12 font
+HELV_16  FNT  Data for Helvetica 16 font
+HELV_20  FNT  Data for Helvetica 20 font
+HELV_24  FNT  Data for Helvetica 24 font
+HELV_30  FNT  Data for Helvetica 30 font
+HELV_37  FNT  Data for Helvetica 37 font
+
+FILE     LIS  This file

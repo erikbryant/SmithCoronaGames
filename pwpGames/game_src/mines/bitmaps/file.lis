@@ -1,0 +1,99 @@
+MAKEFILE      Defines targets for the builds.
+MAKE     BAT  Batch file to initiate a build or a clean
+FILE     LIS  This file
+/*
+** CRT Bitmaps
+*/
+
+0        BMP  \
+1        BMP   \
+2        BMP    \
+3        BMP     \
+4        BMP      -- Numbered pixmaps to show how many neighbors a square has
+5        BMP     /
+6        BMP    /
+7        BMP   /
+8        BMP  /
+COVER_01 BMP  \
+COVER_02 BMP   \
+COVER_03 BMP    \
+COVER_04 BMP     \
+COVER_05 BMP      \
+COVER_06 BMP       \
+COVER_07 BMP        \
+COVER_08 BMP         -- Different colors of tiles
+COVER_09 BMP        /
+COVER_10 BMP       /
+COVER_11 BMP      /
+COVER_12 BMP     /
+COVER_13 BMP    /
+COVER_14 BMP   /
+COVER_15 BMP  /
+MARK_01  BMP  \
+MARK_02  BMP   \
+MARK_03  BMP    \
+MARK_04  BMP     \
+MARK_05  BMP      \
+MARK_06  BMP       \
+MARK_07  BMP        \
+MARK_08  BMP         -- Different colors of marked tiles
+MARK_09  BMP        /
+MARK_10  BMP       /
+MARK_11  BMP      /
+MARK_12  BMP     /
+MARK_13  BMP    /
+MARK_14  BMP   /
+MARK_15  BMP  /
+TEST_01  BMP  \
+TEST_02  BMP   \
+TEST_03  BMP    \
+TEST_04  BMP     \
+TEST_05  BMP      \
+TEST_06  BMP       \
+TEST_07  BMP        \
+TEST_08  BMP         -- Different colors of tiles marked as "test"
+TEST_09  BMP        /
+TEST_10  BMP       /
+TEST_11  BMP      /
+TEST_12  BMP     /
+TEST_13  BMP    /
+TEST_14  BMP   /
+TEST_15  BMP  /
+WRONG_01 BMP  \
+WRONG_02 BMP   \
+WRONG_03 BMP    \
+WRONG_04 BMP     \
+WRONG_05 BMP      \
+WRONG_06 BMP       \
+WRONG_07 BMP        \
+WRONG_08 BMP         -- Different colors of tiles that were marked wrong
+WRONG_09 BMP        /
+WRONG_10 BMP       /
+WRONG_11 BMP      /
+WRONG_12 BMP     /
+WRONG_13 BMP    /
+WRONG_14 BMP   /
+WRONG_15 BMP  /
+POINTER  BMP  The pointer
+MINE     BMP  An exposed mine
+
+/*
+** LCD Bitmaps
+*/
+
+0_LCD    BMP  \
+1_LCD    BMP   \
+2_LCD    BMP    \
+3_LCD    BMP     \
+4_LCD    BMP      -- Numbered pixmaps to show how many neighbors a square has
+5_LCD    BMP     /
+6_LCD    BMP    /
+7_LCD    BMP   /
+8_LCD    BMP  /
+COVR_LCD BMP  A covered tile
+MARK_LCD BMP  A marked tile
+TEST_LCD BMP  A tile marked "test"
+WRNG_LCD BMP  A tile that was marked incorrectly
+MINE_LCD BMP  An exposed mine
+PTR_LCD  BMP  The pointer
+

@@ -1,0 +1,4 @@
+_MAKE    BAT  BAT file that controls the build process.
+MAKEFILE INC  Make directives that build the targets.
+
+FILE     LIS  This file.

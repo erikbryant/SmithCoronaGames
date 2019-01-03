@@ -1,0 +1,45 @@
+MAKEFILE      Defines targets for the build
+
+MAKE     BAT  Initiates a build or a clean
+
+MINES    C    Source code for the mines program
+
+BOARDCRT H    Board include file for the CRT
+BOARDLCD H    Board include file for the LCD
+MINES    H    Macro/types definition file for the mines program
+LCDPIX   H    Includes all PIX files for the LCD version
+CRTPIX   H    Includes all PIX files for the CRT version
+
+MINE_CRT HLP  Help file for the CRT
+MINE_LCD HLP  Help file for the LCD
+
+FILE     LIS  This file
+BOARDCRT LIS  List of available game boards for the CRT version of Mines Alive!
+BOARDLCD LIS  List of available game boards for the LCD version of Mines Alive!
+
+BEACON   CRT  \
+CASTLE   CRT   \
+CHURCH   CRT    \
+HILLS    CRT     \
+ISLAND   CRT      \
+PILLARS  CRT       \
+PIRATE   CRT        \ Map of the squares on the gameboard.
+PLANE    CRT        /
+PYRAMID  CRT       /
+ROBOT    CRT      /
+SHADES   CRT     /
+TILES    CRT    /
+TREE     CRT   /
+YACHT    CRT  /
+
+ARROW    LCD  \
+CASTLE   LCD   \
+RECTANGL LCD    \
+SHIP     LCD     \ Map of the squares on the gameboard. 
+TRAIN    LCD     /                                        
+TRUCK    LCD    /                                         
+WAFFLE   LCD   /                                          
+
+
+
+

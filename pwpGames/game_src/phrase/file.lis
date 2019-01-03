@@ -1,0 +1,18 @@
+MAKEFILE      File to determine what targets are necessary to build phrase.
+
+MAKE     BAT  BATCH file to build the PHRASE image.
+
+PHRASE   C    Source code for Spin-A-Phrase.
+
+PHRASE   CNV  Human readable phrase data file.
+
+PHRASES  DAT  Machine readable data file (output from PhGen).
+
+PHR_CRT  HLP  CRT help file.
+PHR_LCD  HLP  LCD help file.
+
+PHRASE   H    Types and definitions for Spin-A-Phrase.
+PIXMAPS  H    List of pixmaps for the game.
+
+FILE     LIS  This file.
+

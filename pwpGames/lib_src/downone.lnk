@@ -1,0 +1,7 @@
+CHIP 68000
+FORMAT S
+ORDER downhead,vars,zerovars,psosdat,reset,vect,init,psos,probe,code,const,strings,literals,??INITDATA
+BASE $10000
+LISTMAP NOCROSSREF, PUBLICS
+END
+

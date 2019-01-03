@@ -1,0 +1,21 @@
+ABS2FIX  EXE            Creates a binary executable from S-records.
+
+BMPTOPIX EXE            Converts black and white Windows 3.x bitmap (.BMP)
+                        file into a format used by the graphics libraries.
+                        .PIX is the extension given arbitrarily to this file.
+
+BOARDCRT EXE            Creates an include file containing information about
+                        the different boards used in the CRT version of Spin-
+                        A-Phrase.
+
+BOARDLCD EXE            Creates an include file condtaining information about
+                        the different boards used in the LCD version of Spin-
+                        A-Phrase.
+
+NMAKE    EXE            Microsoft make utility.
+
+PHGEN    EXE            Converts a text phrase file to the format used by the
+                        game to select and read files from a floppy disk.
+
+READ     ME             Description of the files in this directory.
+

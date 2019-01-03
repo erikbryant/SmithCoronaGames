@@ -1,0 +1,385 @@
+Directory PATH listing for Volume MS-DOS_5   
+Volume Serial Number is 178A-B530
+C:.
+|   READ.ME
+|   ALLFILES.TXT
+|   
++---GAME_SRC
+|   +---CAPTURE
+|   |       MAKE.BAT
+|   |       BLACKCRT.BMP
+|   |       BLACKLCD.BMP
+|   |       FREECRT.BMP
+|   |       FREELCD.BMP
+|   |       WHITECRT.BMP
+|   |       WHITELCD.BMP
+|   |       BOARD.C
+|   |       CAPTURE.C
+|   |       CURSOR.C
+|   |       HELP.C
+|   |       MAKEMOVE.C
+|   |       MENU.C
+|   |       MINIMAX.C
+|   |       WIN_RTNS.C
+|   |       CURSOR.H
+|   |       HELP.H
+|   |       MAKEMOVE.H
+|   |       MENU.H
+|   |       MINIMAX.H
+|   |       WIN_RTNS.H
+|   |       BOARD.H
+|   |       CAPTURE.H
+|   |       CAPCRT.HLP
+|   |       CAPLCD.HLP
+|   |       FILE.LIS
+|   |       MYAPP.LNK
+|   |       MAKEFILE.PWP
+|   |       
+|   +---MINES
+|   |   |   MAKEFILE
+|   |   |   MAKE.BAT
+|   |   |   MINES.C
+|   |   |   BEACON.CRT
+|   |   |   CASTLE.CRT
+|   |   |   CHURCH.CRT
+|   |   |   HILLS.CRT
+|   |   |   ISLAND.CRT
+|   |   |   PILLARS.CRT
+|   |   |   PIRATE.CRT
+|   |   |   PLANE.CRT
+|   |   |   PYRAMID.CRT
+|   |   |   ROBOT.CRT
+|   |   |   SHADES.CRT
+|   |   |   TILES.CRT
+|   |   |   TREE.CRT
+|   |   |   YACHT.CRT
+|   |   |   MINES.H
+|   |   |   LCDPIX.H
+|   |   |   BOARDLCD.H
+|   |   |   BOARDCRT.H
+|   |   |   MINE_CRT.HLP
+|   |   |   MINE_LCD.HLP
+|   |   |   ARROW.LCD
+|   |   |   CASTLE.LCD
+|   |   |   RECTANGL.LCD
+|   |   |   SHIP.LCD
+|   |   |   TRAIN.LCD
+|   |   |   TRUCK.LCD
+|   |   |   WAFFLE.LCD
+|   |   |   BOARDCRT.LIS
+|   |   |   BOARDLCD.LIS
+|   |   |   CRTPIX.H
+|   |   |   FILE.LIS
+|   |   |   
+|   |   +---BITMAPS
+|   |   |       MAKEFILE
+|   |   |       MAKE.BAT
+|   |   |       0.BMP
+|   |   |       0_LCD.BMP
+|   |   |       1.BMP
+|   |   |       1_LCD.BMP
+|   |   |       2.BMP
+|   |   |       2_LCD.BMP
+|   |   |       3.BMP
+|   |   |       3_LCD.BMP
+|   |   |       4.BMP
+|   |   |       4_LCD.BMP
+|   |   |       5.BMP
+|   |   |       5_LCD.BMP
+|   |   |       6.BMP
+|   |   |       6_LCD.BMP
+|   |   |       7.BMP
+|   |   |       7_LCD.BMP
+|   |   |       8.BMP
+|   |   |       8_LCD.BMP
+|   |   |       COVER_01.BMP
+|   |   |       COVER_02.BMP
+|   |   |       COVER_03.BMP
+|   |   |       COVER_04.BMP
+|   |   |       COVER_05.BMP
+|   |   |       COVER_06.BMP
+|   |   |       COVER_07.BMP
+|   |   |       COVER_08.BMP
+|   |   |       COVER_09.BMP
+|   |   |       COVER_10.BMP
+|   |   |       COVER_11.BMP
+|   |   |       COVER_12.BMP
+|   |   |       COVER_13.BMP
+|   |   |       COVER_14.BMP
+|   |   |       COVER_15.BMP
+|   |   |       COVR_LCD.BMP
+|   |   |       MARK_01.BMP
+|   |   |       MARK_02.BMP
+|   |   |       MARK_03.BMP
+|   |   |       MARK_04.BMP
+|   |   |       MARK_05.BMP
+|   |   |       MARK_06.BMP
+|   |   |       MARK_07.BMP
+|   |   |       MARK_08.BMP
+|   |   |       MARK_09.BMP
+|   |   |       MARK_10.BMP
+|   |   |       MARK_11.BMP
+|   |   |       MARK_12.BMP
+|   |   |       MARK_13.BMP
+|   |   |       MARK_14.BMP
+|   |   |       MARK_15.BMP
+|   |   |       MARK_LCD.BMP
+|   |   |       MINE.BMP
+|   |   |       MINE_LCD.BMP
+|   |   |       POINTER.BMP
+|   |   |       PTR_LCD.BMP
+|   |   |       TEST_01.BMP
+|   |   |       TEST_02.BMP
+|   |   |       TEST_03.BMP
+|   |   |       TEST_04.BMP
+|   |   |       TEST_05.BMP
+|   |   |       TEST_06.BMP
+|   |   |       TEST_07.BMP
+|   |   |       TEST_08.BMP
+|   |   |       TEST_09.BMP
+|   |   |       TEST_10.BMP
+|   |   |       TEST_11.BMP
+|   |   |       TEST_12.BMP
+|   |   |       TEST_13.BMP
+|   |   |       TEST_14.BMP
+|   |   |       TEST_15.BMP
+|   |   |       TEST_LCD.BMP
+|   |   |       WRNG_LCD.BMP
+|   |   |       WRONG_01.BMP
+|   |   |       WRONG_02.BMP
+|   |   |       WRONG_03.BMP
+|   |   |       WRONG_04.BMP
+|   |   |       WRONG_05.BMP
+|   |   |       WRONG_06.BMP
+|   |   |       WRONG_07.BMP
+|   |   |       WRONG_08.BMP
+|   |   |       WRONG_09.BMP
+|   |   |       WRONG_10.BMP
+|   |   |       WRONG_11.BMP
+|   |   |       WRONG_12.BMP
+|   |   |       WRONG_13.BMP
+|   |   |       WRONG_14.BMP
+|   |   |       WRONG_15.BMP
+|   |   |       FILE.LIS
+|   |   |       
+|   |   +---CRT_OBJ
+|   |   |       READ.ME
+|   |   |       
+|   |   \---LCD_OBJ
+|   |           READ.ME
+|   |           
+|   +---PHRASE
+|   |   |   MAKEFILE
+|   |   |   MAKE.BAT
+|   |   |   PHRASE.C
+|   |   |   PHRASE.CNV
+|   |   |   PHRASES.DAT
+|   |   |   PIXMAPS.H
+|   |   |   PHR_CRT.HLP
+|   |   |   PHR_LCD.HLP
+|   |   |   PHRASE.H
+|   |   |   FILE.LIS
+|   |   |   
+|   |   +---BITMAPS
+|   |   |       MAKEFILE
+|   |   |       MAKE.BAT
+|   |   |       1000L.BMP
+|   |   |       1000U.BMP
+|   |   |       100L.BMP
+|   |   |       100U.BMP
+|   |   |       1500L.BMP
+|   |   |       1500U.BMP
+|   |   |       200L.BMP
+|   |   |       200U.BMP
+|   |   |       300L.BMP
+|   |   |       300U.BMP
+|   |   |       400L.BMP
+|   |   |       400U.BMP
+|   |   |       500L.BMP
+|   |   |       500U.BMP
+|   |   |       600L.BMP
+|   |   |       600U.BMP
+|   |   |       700L.BMP
+|   |   |       700U.BMP
+|   |   |       800L.BMP
+|   |   |       800U.BMP
+|   |   |       900L.BMP
+|   |   |       900U.BMP
+|   |   |       ARROW.BMP
+|   |   |       BROKEL.BMP
+|   |   |       BROKEU.BMP
+|   |   |       D1000L.BMP
+|   |   |       D1000U.BMP
+|   |   |       D100L.BMP
+|   |   |       D100U.BMP
+|   |   |       D1500L.BMP
+|   |   |       D1500U.BMP
+|   |   |       D200L.BMP
+|   |   |       D200U.BMP
+|   |   |       D300L.BMP
+|   |   |       D300U.BMP
+|   |   |       D400L.BMP
+|   |   |       D400U.BMP
+|   |   |       D500L.BMP
+|   |   |       D500U.BMP
+|   |   |       D600L.BMP
+|   |   |       D600U.BMP
+|   |   |       D700L.BMP
+|   |   |       D700U.BMP
+|   |   |       D800L.BMP
+|   |   |       D800U.BMP
+|   |   |       D900L.BMP
+|   |   |       D900U.BMP
+|   |   |       DARROW.BMP
+|   |   |       DBROKEL.BMP
+|   |   |       DBROKEU.BMP
+|   |   |       DFREEL.BMP
+|   |   |       DFREEU.BMP
+|   |   |       DLOSEL.BMP
+|   |   |       DLOSEU.BMP
+|   |   |       FREEL.BMP
+|   |   |       FREEU.BMP
+|   |   |       LOSEL.BMP
+|   |   |       LOSEU.BMP
+|   |   |       FILE.LIS
+|   |   |       
+|   |   +---CRT_OBJ
+|   |   |       READ.ME
+|   |   |       
+|   |   \---LCD_OBJ
+|   |           READ.ME
+|   |           
+|   \---TETRIS
+|       |   MAKEFILE
+|       |   MAKE.BAT
+|       |   TETRIS.C
+|       |   TETCRT.HLP
+|       |   TETLCD.HLP
+|       |   FILE.LIS
+|       |   
+|       +---BITMAPS
+|       |       MAKEFILE
+|       |       MAKE.BAT
+|       |       TETLC1.BMP
+|       |       TETLC2.BMP
+|       |       TETLC3.BMP
+|       |       TETLC4.BMP
+|       |       TETLC5.BMP
+|       |       TETLC6.BMP
+|       |       TETLC7.BMP
+|       |       TETPC1.BMP
+|       |       TETPC2.BMP
+|       |       TETPC3.BMP
+|       |       TETPC4.BMP
+|       |       TETPC5.BMP
+|       |       TETPC6.BMP
+|       |       TETPC7.BMP
+|       |       FILE.LIS
+|       |       
+|       +---CRT_OBJ
+|       |       READ.ME
+|       |       
+|       \---LCD_OBJ
+|               READ.ME
+|               
++---LIB
+|       DOWNLOAD.LIB
+|       MCC68KAB.LIB
+|       FILE.LIS
+|       
++---LIB_SRC
+|   |   MAKEFILE
+|   |   MAKE.BAT
+|   |   ETILGCRT.BMP
+|   |   ETILGLCD.BMP
+|   |   SCLGCRT.BMP
+|   |   SCLGLCD.BMP
+|   |   DOWNHEAD.C
+|   |   FONTLIB.C
+|   |   GR.C
+|   |   HELPLIB.C
+|   |   INP.C
+|   |   PWP.C
+|   |   SPLASH.C
+|   |   WINDOW.C
+|   |   DOWNSYS.CRT
+|   |   HELV_12.FNT
+|   |   HELV_16.FNT
+|   |   HELV_20.FNT
+|   |   HELV_24.FNT
+|   |   HELV_30.FNT
+|   |   HELV_37.FNT
+|   |   FONTLIB.H
+|   |   HELPLIB.H
+|   |   INP.H
+|   |   PC_KEYS.H
+|   |   SC_DEF.H
+|   |   SPLASH.H
+|   |   WINDOW.H
+|   |   FILEIO.H
+|   |   HELV_12.HDR
+|   |   HELV_16.HDR
+|   |   HELV_20.HDR
+|   |   HELV_24.HDR
+|   |   HELV_30.HDR
+|   |   HELV_37.HDR
+|   |   DOWNSYS.LCD
+|   |   DOWNONE.LNK
+|   |   DOWNZERO.LNK
+|   |   GR.H
+|   |   FILE.LIS
+|   |   
+|   +---CRT_OBJ
+|   |       READ.ME
+|   |       
+|   \---LCD_OBJ
+|           READ.ME
+|           
++---MAKEFILE
+|       _MAKE.BAT
+|       MAKEFILE.INC
+|       FILE.LIS
+|       
++---SYS_H
+|       BITDEFS.H
+|       CONST.H
+|       DEBUG.H
+|       DIALGBUF.H
+|       DIALGMAN.H
+|       DISK.H
+|       DMANEVNT.H
+|       DMDEFINE.H
+|       DOWNLOAD.H
+|       DOWNPORT.H
+|       EDITDEFS.H
+|       EDITYPES.H
+|       FONTS.H
+|       KEYS.H
+|       LIMITS.H
+|       MACROS.H
+|       MALLOC.H
+|       MSC_MAC.H
+|       MSG.H
+|       PCDISK.H
+|       PSOS.H
+|       TYPES.H
+|       WINDOWS.H
+|       WINMACRO.H
+|       AMMSG.H
+|       JUMPTAB.J
+|       VARSTAB.J
+|       JUMPTAB.JMP
+|       VARSTAB.JMP
+|       DISK.P
+|       WIN1.P
+|       AM.H
+|       
+\---TOOLS
+        ABS2FIX.EXE
+        BMPTOPIX.EXE
+        BOARDCRT.EXE
+        BOARDLCD.EXE
+        NMAKE.EXE
+        PHGEN.EXE
+        FILE.LIS
+        

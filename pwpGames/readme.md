@@ -2,10 +2,10 @@ To Install:
 
         Create the directory in which you wish to install the PWP games.
 
-        Move to that drive containing the installation disk.
+        Move to that directory.
 
-        Type install [drive letter]:[path to directory in which to install
-        the games]
+        Type b:\install [drive letter]:[path to directory in which to install
+                         the games]
 
         Stand back.
 
@@ -15,3 +15,4 @@ the PWP games:
 
 MRI_68K_LIB=[drive]:[path to directory of installation]\LIB;
 MRI_68K_INC=[drive]:[path to directory of installation]\SYS_H;
+

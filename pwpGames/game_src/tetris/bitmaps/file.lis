@@ -1,0 +1,20 @@
+MAKEFILE        File to determine what targets are necessary to build the bitmaps.
+MAKE     BAT    BAT file to initiate build of Tetris.
+FILE     LIS    This file
+
+TETLC1   BMP    Bitmaps for each pattern of block that makes up each of the
+TETLC2   BMP    seven Tetris pieces for the LCD version.
+TETLC3   BMP
+TETLC4   BMP
+TETLC5   BMP
+TETLC6   BMP
+TETLC7   BMP
+
+TETPC1   BMP    Bitmaps for each pattern of block that makes up each  of the
+TETPC2   BMP    seven Tetris pieces for the CRT version.
+TETPC3   BMP
+TETPC4   BMP
+TETPC5   BMP
+TETPC6   BMP
+TETPC7   BMP
+

@@ -1,0 +1,156 @@
+/*
+** This is a help file, created by:
+**    Q:\PWPAPPS\BIN\HELPGEN.EXE
+** With the input file:
+**    capcrt.gen
+** For the application:
+**    CaptureIt
+*/
+
+#ifdef PC
+   #define ADJ 0
+#endif
+
+#ifdef CRT
+   #define ADJ 2
+#endif
+
+#ifdef LCD
+   #define ADJ 0
+#endif
+
+/*
+** Records...
+*/
+HELP_RECORD Help_records[] = {
+   { 3 - ADJ,  4, 20,  2,  1,  2,  4, "Objective:"},
+   { 2 - ADJ,  5,  1,  1,  1,  2,  4, "Capture your opponent's circles! The\\t player\\t with the most circles at\\t the\\t end"},
+   { 2 - ADJ,  5,  1,  1,  1,  2,  4, "of the game is   the winner. CaptureIt is over when there are no valid moves"},
+   { 2 - ADJ,  4, 20,  1,  1,  2,  4, "available, or when a player completely captures all of the opponents circles."},
+   { 3 - ADJ,  4, 20,  2,  1,  2,  4, "Playing Field:"},
+   { 2 - ADJ,  5,  1,  1,  1,  2,  4, "The playing field (or electronic board) is\\t an 8 x 8 grid of squares. A square is"},
+   { 2 - ADJ,  6,  1,  1,  1,  2,  4, "empty \\t if a player has\\t\\t not moved\\t to that position. Once a player makes\\t a"},
+   { 2 - ADJ,  4, 20,  1,  1,  2,  4, "move, a circle of the appropriate color (black or white) will occupy the square."},
+   { 2 - ADJ,  4, 20,  1,  1,  2,  4, " "},
+   { 2 - ADJ,  4,  1,  1,  1,  2,  4, "Each game begins with\\t the middle\\t\\t four squares on the board\\t occupied by two"},
+   { 2 - ADJ,  4, 20,  1,  1,  2,  4, "white circles and two black circles."},
+   { 2 - ADJ,  4, 20,  1,  1,  2,  4, " "},
+   { 2 - ADJ,  4,  1,  1,  1,  2,  4, "The\\t cursor keys (right, left,\\t up and down) are used to move\\t around the board."},
+   { 2 - ADJ,  5,  1,  1,  1,  2,  4, "An indented square represents  your current position. A plus sign in a square"},
+   { 2 - ADJ,  4, 20,  1,  1,  2,  4, "represents a valid move (a position you can place your circle in)."},
+   { 2 - ADJ,  4, 20,  1,  1,  2,  4, " "},
+   { 2 - ADJ,  4,  1,  1,  1,  2,  4, "A status box\\t below the board\\t displays the current player (black or white), the"},
+   { 2 - ADJ,  9,  1,  1,  1,  2,  4, "skill level (beginner, novice or\\t expert) and the score for\\t\\t each\\t player. A"},
+   { 2 - ADJ,  4,  1,  1,  1,  2,  4, "command box on the right allows you to start, get a hint, change  options, get"},
+   { 2 - ADJ,  4, 20,  1,  1,  2,  4, "help or return to the Word Processor."},
+   { 3 - ADJ,  4, 20,  2,  1,  2,  4, "Starting:"},
+   { 2 - ADJ,  4,  1,  1,  1,  2,  4, "Select any\\t\\t of the available options if you wish to change  the\\t preset settings."},
+   { 2 - ADJ,  5,  1,  1,  1,  2,  4, "They are preset\\t to:  \\uB\\ueginner and \\uO\\une Player. Select \\uN\\uew to begin the game"},
+   { 2 - ADJ,  4,  1,  1,  1,  2,  4, "by pressing the Select\\t + N Keys. You   can cancel\\t\\t the current game and start"},
+   { 2 - ADJ,  4, 20,  1,  1,  2,  4, "again by selecting the \\uN\\uew option."},
+   { 2 - ADJ,  4, 20,  1,  1,  2,  4, " "},
+   { 3 - ADJ,  4, 20,  2,  1,  2,  4, "Playing:"},
+   { 2 - ADJ,  4,  1,  1,  1,  2,  4, "\\uSingle Player\\u.  You\\t are the black circles while your PWP opponent is the white"},
+   { 2 - ADJ,  4, 20,  1,  1,  2,  4, "circles. You make the first move."},
+   { 2 - ADJ,  4, 20,  1,  1,  2,  4, " "},
+   { 2 - ADJ,  5,  1,  1,  1,  2,  4, "\\uTwo Players\\u. Choose\\t who\\t will be the black circles and who will  be the white"},
+   { 2 - ADJ,  4, 20,  1,  1,  2,  4, "circles. The first move goes to the player with the black circles."},
+   { 2 - ADJ,  4, 20,  1,  1,  2,  4, " "},
+   { 2 - ADJ,  4,  1,  1,  1,  2,  4, "\\uMake a move\\u by  using\\t the cursor keys\\t (right, left, up and down) to place your"},
+   { 2 - ADJ,  5,  1,  1,  1,  2,  4, "circle in\\t a valid position (indicated by a plus\\t sign in the square). A\\t valid move"},
+   { 2 - ADJ, 10,  1,  1,  1,  2,  4, "encloses your\\t opponent's circles on two\\t\\t ends\\t (vertically, horizontally or"},
+   { 2 - ADJ,  4, 20,  1,  1,  2,  4, "diagonally) by your circles."},
+   { 2 - ADJ,  5,  1,  1,  1,  2,  4, "If you find yourself stuck\\t on where you should place your next circle, choose"},
+   { 2 - ADJ,  4,  1,  1,  1,  2,  4, "\\uC\\ulue by pressing the Select + C Keys. A plus sign will  display in the square the"},
+   { 2 - ADJ,  4,  1,  1,  1,  2,  4, "PWP suggests as the best available move. You can choose this suggestion, or"},
+   { 2 - ADJ,  5,  1,  1,  1,  2,  4, "move elsewhere. \\uH\\uelp can be selected anytime during the game (Select +  H)."},
+   { 2 - ADJ,  4,  1,  1,  1,  2,  4, "Press the Exit Key when \\t you have finished\\t reading the\\t help screens to return"},
+   { 2 - ADJ,  4, 20,  1,  1,  2,  4, "to the game."},
+   { 2 - ADJ,  4, 20,  1,  1,  2,  4, " "},
+   { 2 - ADJ,  6,  1,  1,  1,  2,  4, "\\uEnter a move\\u by pressing the Space bar. You cannot enter your circle in a"},
+   { 2 - ADJ,  4,  1,  1,  1,  2,  4, "position that does not display a  plus sign. This game has no time limit,\\t so take"},
+   { 2 - ADJ,  4, 20,  1,  1,  2,  4, "your time in selecting the best move!"},
+   { 2 - ADJ,  4, 20,  1,  1,  2,  4, " "},
+   { 3 - ADJ,  4, 20,  2,  1,  2,  4, "Ending:"},
+   { 2 - ADJ,  5,  1,  1,  1,  2,  4, "The game is over when there are\\t no valid\\t\\t moves available, or when a player"},
+   { 2 - ADJ,  5,  1,  1,  1,  2,  4, "completely captures all of the opponent's circles. The player with the highest"},
+   { 2 - ADJ,  5,  1,  1,  1,  2,  4, "number\\t of circles is the winner. Select\\t \\uN\\uew to\\t start a  new game, or\\t \\uQ\\uuit to"},
+   { 2 - ADJ,  4, 20,  1,  1,  2,  4, "return to the Word Processor."},
+   { 2 - ADJ,  5,  1,  1,  1,  2,  4, "Once you\\t have mastered the game, add\\t \\uchallenge\\u by\\t changing the available"},
+   { 2 - ADJ,  5,  1,  1,  1,  2,  4, "options! Change the options before you start  a game.  Press the Select + O"},
+   { 2 - ADJ,  4, 20,  1,  1,  2,  4, "Keys to display the Options."},
+   { 2 - ADJ,  4, 20,  1,  1,  2,  4, " "},
+   { 3 - ADJ,  4, 20,  2,  1,  2,  4, "Beginner:"},
+   { 2 - ADJ,  4, 20,  1,  1,  2,  4, "The easiest skill level. CaptureIt is preset to play at the Beginner level."},
+   { 2 - ADJ,  4, 20,  1,  1,  2,  4, " "},
+   { 3 - ADJ,  4, 20,  2,  1,  2,  4, "Novice:"},
+   { 2 - ADJ,  4, 20,  1,  1,  2,  4, "Not so easy! For the experienced player."},
+   { 2 - ADJ,  4, 20,  1,  1,  2,  4, " "},
+   { 3 - ADJ,  4, 20,  2,  1,  2,  4, "Expert:"},
+   { 2 - ADJ,  4, 20,  1,  1,  2,  4, "The most difficult skill level. Ace players only!"},
+   { 2 - ADJ,  4, 20,  1,  1,  2,  4, " "},
+   { 2 - ADJ,  7,  1,  1,  1,  2,  4, "The higher the skill level,\\t the\\t\\t longer the PWP takes in evaluating its\\t next"},
+   { 2 - ADJ,  4, 20,  1,  1,  2,  4, "move. Be patient and beware!"},
+   { 3 - ADJ,  4, 20,  2,  1,  2,  4, "One or Two Players:"},
+   { 2 - ADJ,  5,  1,  1,  1,  2,  4, "Play against your PWP or\\t\\t challenge a friend. If Two\\t Players is selected,  the"},
+   { 2 - ADJ,  4, 20,  1,  1,  2,  4, "skill level is ignored."},
+   { 2 - ADJ,  4, 20,  1,  1,  2,  4, " "},
+   { 3 - ADJ,  4, 20,  2,  1,  2,  4, "Demo:"},
+   { 2 - ADJ,  4,  1,  1,  1,  2,  4, "Get a feel for how the \\t game works by watching the  PWP play against itself."},
+   { 2 - ADJ,  5,  1,  1,  1,  2,  4, "The demo will continue to run until you press any key. The demo reflects the"},
+   { 2 - ADJ,  4, 20,  1,  1,  2,  4, "skill level selected, so you can witness a demo for any of the three skill levels."},
+   { 2 - ADJ,  4, 20,  1,  1,  2,  4, " "},
+   { 2 - ADJ,  4,  1,  1,  1,  2,  4, "Once you\\t have made your selections, press the Exit Key to return to\\t the main"},
+   { 2 - ADJ,  4, 20,  1,  1,  2,  4, "screen."},
+   { 2 - ADJ,  5,  1,  1,  1,  2,  4, "Try to capture the corners  and edges of the board.  The corners cannot be"},
+   { 2 - ADJ,  4, 20,  1,  1,  2,  4, "recaptured and the edges are difficult to recapture."},
+   { 2 - ADJ,  4, 20,  1,  1,  2,  4, " "},
+   { 2 - ADJ,  5,  1,  1,  1,  2,  4, "Try  to\\t capture the four\\t middle squares.\\t These positions prove\\t beneficial for"},
+   { 2 - ADJ,  4, 20,  1,  1,  2,  4, "many captures!"},
+   { 2 - ADJ,  4, 20,  1,  1,  2,  4, " "},
+   { 2 - ADJ,  4,  1,  1,  1,  2,  4, "Watch the demo with the  skill level set to\\t Novice or\\t Expert.\\t These games are"},
+   { 2 - ADJ,  4, 20,  1,  1,  2,  4, "played at a speed which allows you to witness the PWP's own strategy."}
+}; /* End Help_records */
+
+/*
+** Pages...
+*/
+HELP_PAGE Help_pages[] = {
+   {  0,   4},  /* Page #0 */
+   {  4,  16},  /* Page #1 */
+   { 20,  17},  /* Page #2 */
+   { 37,  16},  /* Page #3 */
+   { 53,  15},  /* Page #4 */
+   { 68,  11},  /* Page #5 */
+   { 79,   8}   /* Page #6 */
+}; /* End Help_pages */
+
+/*
+** Topics...
+*/
+HELP_TOPIC Help_topics[] = {
+   {"O\\uv\\uerview", 'V',  0,  2},
+   {"\\uR\\uules", 'R',  2,  2},
+   {"\\uO\\uptions", 'O',  4,  2},
+   {"\\uS\\utrategies", 'S',  6,  1}
+}; /* End Help_topics */
+
+/*
+** Header...
+*/
+HELP_INFO Game_help = {
+   "CaptureIt",  /* App name */
+#ifdef LCD
+   "Helvetica 30",  /* LCD Font name */
+#else
+   "Helvetica 30",  /* CRT Font name */
+#endif
+     4, /* Number of topics */
+     7, /* Number of pages  */
+    87, /* Number of lines  */
+   Help_topics,
+   Help_pages,
+   Help_records
+}; /* End Game_help */
+
+#define GAME_HELP &Game_help

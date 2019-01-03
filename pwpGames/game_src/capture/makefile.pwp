@@ -1,0 +1,79 @@
+#
+# Include information about your programs here.  Include a list of all
+# of the suffixes for your source so that MAKE can figure out how to
+# build your OBJ files.
+#
+TARGET     = PWP
+PROJECT    = capture
+DEPENDENTS = minimax.obj makemove.obj help.obj cursor.obj menu.obj board.obj win_rtns.obj
+.SUFFIXES: .C .A68 .BMP .GEN
+
+CC        = mcc68k -B
+OPTIMIZE  = -Oa -Ot
+OUTPUT    = -Fsm -S
+INCLUDE   = -I ..\..\lib_src
+
+ASM       = asm68k
+#ASMOPT   = -f d,g
+
+LINK      = lnk68k
+LINKOPT_0 = -c ..\..\lib_src\downzero.lnk -o downzero.abs
+LINKOPT_1 = -c ..\..\lib_src\downone.lnk  -o downone.abs
+
+!IFDEF CRT
+PIXMAPS   = blackcrt.pix whitecrt.pix freecrt.pix
+CCOPT     = -DPWP -DCRT $(OPTIMIZE) $(OUTPUT) $(INCLUDE)
+LINKOPT_S = -c ..\..\lib_src\downsys.crt  -o downsys.obj
+!ENDIF
+
+!IFDEF LCD
+PIXMAPS   = blacklcd.pix whitelcd.pix freelcd.pix
+CCOPT     = -DPWP -DLCD $(OPTIMIZE) $(OUTPUT) $(INCLUDE)
+LINKOPT_S = -c ..\..\lib_src\downsys.lcd  -o downsys.obj
+!ENDIF
+
+#*****************************
+
+#
+# Build the final BIN file by creating the two ABS files and
+# running them through the fix program...
+#
+$(PROJECT).bin:  downsys.obj
+    -$(LINK) $(LINKOPT_0) downsys.obj
+    -$(LINK) $(LINKOPT_1) downsys.obj
+    ..\..\tools\abs2fix downzero.abs downone.abs $(PROJECT).bin 65536 > nul
+
+#
+# Link all of the object files into one big object file...
+#
+downsys.obj:     myapp.obj
+    -$(LINK) $(LINKOPT_S) myapp.obj
+
+# links all of my objects files together first
+# and in a second step links myapp.obj with
+# downsys.obj (the rest of the PWP libraries)
+#
+myapp.obj:       $(PIXMAPS) $(PROJECT).obj  $(DEPENDENTS)
+    $(LINK) -c myapp.lnk -o myapp.obj $(PROJECT).obj $(DEPENDENTS)
+
+#
+# To convert a C file to an OBJ file do the following...
+#
+.C.OBJ:
+    $(CC)  $(CCOPT) $*.c
+    $(ASM) $(ASMOPT) $*.src
+
+#
+# To convert an A68 file to an OBJ file do the following...
+#
+.A68.OBJ:
+    $(ASM) $(ASMOPT) $*.a68
+
+#
+# To convert a BMP file to a PIX file do the following...
+#
+.BMP.PIX:
+    ..\..\tools\bmptopix $*.bmp $*.pix
+
+help.obj:      caplcd.hlp capcrt.hlp
+
